@@ -43,14 +43,11 @@ const HousePricePredictor = () => {
       };
 
       return (
-        
-        
         <div className="container">
             <h1 className="title">House Price Predictor</h1>
           <form onSubmit={submission} className="form">
             <label className="label">City</label>
             <input
-              type="text"
               name="city"
               value={features.city}
               onChange={handleChange}
@@ -60,7 +57,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Province</label>
             <input
-              type="text"
               name="province"
               value={features.province}
               onChange={handleChange}
@@ -70,7 +66,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Latitude</label>
             <input
-              type="number"
               name="latitude"
               value={features.latitude}
               onChange={handleChange}
@@ -80,7 +75,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Longitude</label>
             <input
-              type="number"
               name="longitude"
               value={features.longitude}
               onChange={handleChange}
@@ -90,7 +84,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Lease Term</label>
             <input
-              type="text"
               name="lease_term"
               value={features.lease_term}
               onChange={handleChange}
@@ -100,7 +93,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Type of House</label>
             <input
-              type="text"
               name="type"
               value={features.type}
               onChange={handleChange}
@@ -110,7 +102,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Number of Beds</label>
             <input
-              type="number"
               name="beds"
               value={features.beds}
               onChange={handleChange}
@@ -120,7 +111,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Number of Baths</label>
             <input
-              type="number"
               name="baths"
               value={features.baths}
               onChange={handleChange}
@@ -130,7 +120,6 @@ const HousePricePredictor = () => {
     
             <label className="label">Square Feet</label>
             <input
-              type="number"
               name="sq_feet"
               value={features.sq_feet}
               onChange={handleChange}
@@ -165,8 +154,8 @@ const HousePricePredictor = () => {
     
             <label className="label">
               <input
-                type="checkbox"
                 name="pets"
+                type='checkbox'
                 checked={features.pets}
                 onChange={handleChange}
                 className="checkbox"
