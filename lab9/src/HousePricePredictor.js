@@ -43,7 +43,10 @@ const HousePricePredictor = () => {
       };
 
       return (
+        
+        
         <div className="container">
+            <h1 className="title">House Price Predictor</h1>
           <form onSubmit={submission} className="form">
             <label className="label">City</label>
             <input
