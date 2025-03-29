@@ -30,7 +30,7 @@ const HousePricePredictor = () => {
       const submission = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch('/predict_house_price', {
+          const response = await fetch('http://127.0.0.1:5000/predict_house_price', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(features),
@@ -148,8 +148,8 @@ const HousePricePredictor = () => {
               required
               className="input"
             >
-              <option value="No">No</option>
-              <option value="Yes">Yes</option>
+              <option value="No">Non-Smoking</option>
+              <option value="Yes">Smoking</option>
             </select>
     
             <label className="label">
@@ -160,7 +160,7 @@ const HousePricePredictor = () => {
                 onChange={handleChange}
                 className="checkbox"
               />
-              Pets
+              I have a pet
             </label>
     
             <button type="submit" className="button">

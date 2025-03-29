@@ -1,11 +1,16 @@
 import './App.css';
-import HouseousePricePredictor from './HousePricePredictor.js';
+import Login from './Login.js';
+import HousePricePredictor from './HousePricePredictor.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <HouseousePricePredictor />
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/predict" element={<HousePricePredictor />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
