@@ -18,14 +18,14 @@ function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({"username": username, "password": password }), // Sends the user input
+                body: JSON.stringify({"username": username, "password": password }),
             });
 
-            const data = await response.json(); // Convert response to JSON
+            const data = await response.json();
 
             if (data.success) {
                 setMessage(data.message);
-                navigate('/predict'); // Redirect to house price predictor page
+                navigate('/predict');
             } else {
                 setMessage(data.message);
             }
